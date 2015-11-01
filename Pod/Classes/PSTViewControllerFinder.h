@@ -8,14 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^PSTViewControllerFinderIterator)(UIViewController * _Nonnull viewController, NSString * _Nonnull label);
+@interface PSTViewControllerFinderResultItem : NSObject
+
+@property (nonatomic, nonnull) NSString *label;
+
+- (UIViewController * _Nonnull)instantiate;
+
+@end
+
 
 @interface PSTViewControllerFinder : NSObject
 
-- (void)iterateAllViewControllers:(PSTViewControllerFinderIterator _Nonnull)iterator;
+- (NSArray<PSTViewControllerFinderResultItem * > * _Nonnull)findAllViewControllers;
 
-- (void)iterateViewControllersInStoryboards:(PSTViewControllerFinderIterator _Nonnull)iterator;
+- (NSArray<PSTViewControllerFinderResultItem *> * _Nonnull)findViewControllersInStoryboards;
 
-- (void)iterateViewControllersInXibs:(PSTViewControllerFinderIterator _Nonnull)iterator;
+- (NSArray<PSTViewControllerFinderResultItem *> * _Nonnull)findViewControllersInXibs;
 
 @end

@@ -20,16 +20,43 @@
 
 @end
 
-@implementation PSTViewControllerFinder
+typedef UIViewController *(^PSTViewControllerFinderResultItemInstantiator)();
 
-- (void)iterateAllViewControllers:(PSTViewControllerFinderIterator _Nonnull)iterator
+@interface PSTViewControllerFinderResultItem ()
+
+@property (nonatomic, copy, readonly) PSTViewControllerFinderResultItemInstantiator instantiator;
+
+@end
+
+@implementation PSTViewControllerFinderResultItem
+
+- (instancetype)initWithLabel:(NSString *)label instantiator:(PSTViewControllerFinderResultItemInstantiator)instantiator
 {
-    [self iterateViewControllersInStoryboards:iterator];
-    [self iterateViewControllersInXibs:iterator];
+    self = [super init];
+    if (self) {
+        _label = label;
+        _instantiator = [instantiator copy];
+    }
+    return self;
 }
 
-- (void)iterateViewControllersInStoryboards:(PSTViewControllerFinderIterator _Nonnull)iterator
+- (UIViewController *)instantiate
 {
+    return self.instantiator();
+}
+
+@end
+
+@implementation PSTViewControllerFinder
+
+- (NSArray<PSTViewControllerFinderResultItem *> * _Nonnull)findAllViewControllers
+{
+    return [[self findViewControllersInStoryboards] arrayByAddingObjectsFromArray:[self findViewControllersInXibs]];
+}
+
+- (NSArray<PSTViewControllerFinderResultItem *> * _Nonnull)findViewControllersInStoryboards
+{
+    NSMutableArray *resultItems = [NSMutableArray array];
     NSArray<NSString *> *storyboardPaths = [[NSBundle mainBundle] pathsForResourcesOfType:@"storyboardc" inDirectory:@"/"];
     for (NSString *storyboardPath in storyboardPaths) {
         NSString *storyboardName = [storyboardPath.lastPathComponent stringByDeletingPathExtension];
@@ -40,15 +67,19 @@
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
         NSDictionary *identifierToNibNameMap = [storyboard valueForKey:@"identifierToNibNameMap"];  // private API
         for (NSString *identifier in identifierToNibNameMap.allKeys) {
-            UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
             NSString *label = [NSString stringWithFormat:@"%@.storyboard - %@", storyboardName, identifier];
-            iterator(viewController, label);
+            PSTViewControllerFinderResultItem *resultItem = [[PSTViewControllerFinderResultItem alloc] initWithLabel:label instantiator:^UIViewController *{
+                return [storyboard instantiateViewControllerWithIdentifier:identifier];
+            }];
+            [resultItems addObject:resultItem];
         }
     }
+    return [resultItems copy];
 }
 
-- (void)iterateViewControllersInXibs:(PSTViewControllerFinderIterator _Nonnull)iterator
+- (NSArray<PSTViewControllerFinderResultItem *> * _Nonnull)findViewControllersInXibs
 {
+    NSMutableArray *resultItems = [NSMutableArray array];
     NSArray<NSString *> *nibPaths = [[NSBundle mainBundle] pathsForResourcesOfType:@"nib" inDirectory:@"/"];
     for (NSString *nibPath in nibPaths) {
         NSString *nibName = [nibPath.lastPathComponent stringByDeletingPathExtension];
@@ -56,15 +87,22 @@
             // They seems to be pointing non-tilde-suffixed storyboardc directory when targeted to iOS 8.0+.
             continue;
         }
-        id instantiated = [[NSBundle mainBundle] loadNibNamed:nibName owner:[PSTViewControllerFinderDummyOwner new] options:nil].firstObject;
-        if (![instantiated isKindOfClass:[UIViewController class]]) {
+        
+        id (^instantiator)() = ^id{
+            return [[NSBundle mainBundle] loadNibNamed:nibName owner:[PSTViewControllerFinderDummyOwner new] options:nil].firstObject;
+        };
+
+        id instantiatedObject = instantiator();
+        if (![instantiatedObject isKindOfClass:[UIViewController class]]) {
             // Perhaps it is plain view.
             continue;
         }
-        UIViewController *viewController = instantiated;
+
         NSString *label = [NSString stringWithFormat:@"%@.xib", nibName];
-        iterator(viewController, label);
+        PSTViewControllerFinderResultItem *resultItem = [[PSTViewControllerFinderResultItem alloc] initWithLabel:label instantiator:instantiator];
+        [resultItems addObject:resultItem];
     }
+    return [resultItems copy];
 }
 
 @end

@@ -28,6 +28,7 @@
 		FACAFE5C1BE3CC6900B6F40E /* PSTTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACAFE5B1BE3CC6900B6F40E /* PSTTestView.xib */; };
 		FACAFE5E1BE3CC7C00B6F40E /* PSTEmptyXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACAFE5D1BE3CC7C00B6F40E /* PSTEmptyXib.xib */; };
 		FACAFE621BE3DB8A00B6F40E /* PSTAutoLayoutLintTestCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FACAFE611BE3DB8A00B6F40E /* PSTAutoLayoutLintTestCaseTests.m */; };
+		FACAFE641BE676D900B6F40E /* PSTTestViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACAFE631BE676D900B6F40E /* PSTTestViewController2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		FACAFE5B1BE3CC6900B6F40E /* PSTTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSTTestView.xib; sourceTree = "<group>"; };
 		FACAFE5D1BE3CC7C00B6F40E /* PSTEmptyXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSTEmptyXib.xib; sourceTree = "<group>"; };
 		FACAFE611BE3DB8A00B6F40E /* PSTAutoLayoutLintTestCaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTAutoLayoutLintTestCaseTests.m; sourceTree = "<group>"; };
+		FACAFE631BE676D900B6F40E /* PSTTestViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSTTestViewController2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				FAB0D3231BE2779600520CF5 /* PSTTestViewController.h */,
 				FAB0D3241BE2779600520CF5 /* PSTTestViewController.m */,
 				FAB0D3251BE2779600520CF5 /* PSTTestViewController.xib */,
+				FACAFE631BE676D900B6F40E /* PSTTestViewController2.xib */,
 				FACAFE5B1BE3CC6900B6F40E /* PSTTestView.xib */,
 				FACAFE5D1BE3CC7C00B6F40E /* PSTEmptyXib.xib */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -294,6 +297,7 @@
 				FAB0D3271BE2779600520CF5 /* PSTTestViewController.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				FACAFE5E1BE3CC7C00B6F40E /* PSTEmptyXib.xib in Resources */,
+				FACAFE641BE676D900B6F40E /* PSTTestViewController2.xib in Resources */,
 				FACAFE5C1BE3CC6900B6F40E /* PSTTestView.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,

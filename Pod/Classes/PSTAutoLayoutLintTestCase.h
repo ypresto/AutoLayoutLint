@@ -10,15 +10,13 @@
 
 @interface PSTAutoLayoutLintTestCase : XCTestCase
 
-/// Call this from your subclass.
-- (void)checkForBrokenConstraintsWithScreenSizes:(NSArray<NSValue *> *)screenSizes;
-
-/// Override this to skip specific test.
-- (BOOL)shouldCheckForBrokenConstraintsWithViewController:(UIViewController *)viewController
-                                                    label:(NSString *)label
-                                               screenSize:(CGSize)screenSize;
+/// Override this to supply list of screen sizes to be tested.
++ (NSArray<NSValue *> * _Nonnull)screenSizes;
 
 /// Shortcut method to create NSValue of CGSize.
-+ (NSValue *)valueWithWidth:(CGFloat)width height:(CGFloat)height;
++ (NSValue * _Nonnull)valueWithWidth:(CGFloat)width height:(CGFloat)height;
+
+/// Override this to skip specific test.
++ (BOOL)shouldTestViewControllerWithLabel:(NSString * _Nonnull)label screenSize:(CGSize)screenSize;
 
 @end

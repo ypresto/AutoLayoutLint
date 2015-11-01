@@ -35,10 +35,7 @@
 
 - (void)testViewControllersInStoryboards
 {
-    NSMutableArray<NSDictionary *> *items = [NSMutableArray array];
-    [self.viewControllerFinder iterateViewControllersInStoryboards:^(UIViewController * _Nonnull viewController, NSString * _Nonnull label) {
-        [items addObject:@{@"title": viewController.title, @"label": label, @"viewController": viewController}];
-    }];
+    NSArray *items = [self.viewControllerFinder findViewControllersInStoryboards];
     // Initial view controller without identifier, which embeddeds view controller with title: "root"
     UINavigationController *navigationController = (UINavigationController *)[self checkContainsViewControllerWithTitle:@"nav" partOfLabel:@"TestStoryboard.storyboard - UINavigationController-" inItems:items];
     XCTAssertEqualObjects(navigationController.viewControllers.firstObject.title, @"root");
@@ -50,24 +47,24 @@
 
 - (void)testViewControllersInXibs
 {
-    NSMutableArray<NSDictionary *> *items = [NSMutableArray array];
-    [self.viewControllerFinder iterateViewControllersInXibs:^(UIViewController * _Nonnull viewController, NSString * _Nonnull label) {
-        [items addObject:@{@"title": viewController.title, @"label": label}];
-    }];
+    NSArray *items = [self.viewControllerFinder findViewControllersInXibs];
     [self checkContainsViewControllerWithTitle:@"xib" partOfLabel:@"PSTTestViewController.xib" inItems:items];
-    XCTAssertEqual(items.count, 1);
+    [self checkContainsViewControllerWithTitle:@"xib2" partOfLabel:@"PSTTestViewController2.xib" inItems:items];
+    XCTAssertEqual(items.count, 2);
 }
 
 - (UIViewController *)checkContainsViewControllerWithTitle:(NSString *)title
                                  partOfLabel:(NSString *)partOfLabel
                                      inItems:(NSArray<NSDictionary *> *)items
 {
-    for (NSDictionary *item in items) {
-        if ([item[@"title"] isEqualToString:title]) {
+    for (PSTViewControllerFinderResultItem *item in items) {
+        UIViewController *viewController = [item instantiate];
+        if ([viewController.title isEqualToString:title]) {
             XCTAssert(YES, @"Should contain ViewController with title '%@'.", title);
-            BOOL containsPartOfLabel = [item[@"label"] rangeOfString:partOfLabel].location != NSNotFound;
-            XCTAssertTrue(containsPartOfLabel, @"Looked label for '%@' but was '%@'.", partOfLabel, item[@"label"]);
-            return item[@"viewController"];
+            XCTAssertNotNil(item.label);
+            BOOL containsPartOfLabel = [item.label rangeOfString:partOfLabel].location != NSNotFound;
+            XCTAssertTrue(containsPartOfLabel, @"Looked label for '%@' but was '%@'.", partOfLabel, item.label);
+            return viewController;
         }
     }
     XCTFail(@"Should contains ViewController with title '%@'.", title);
