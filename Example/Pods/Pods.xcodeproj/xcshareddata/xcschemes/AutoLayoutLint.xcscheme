@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '806AAE77A6924137B9810E5D'
+               BlueprintIdentifier = '354FADA39EB4A15A8380F8B3'
                BlueprintName = 'AutoLayoutLint'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'AutoLayoutLint.framework'>

@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "AutoLayoutLint"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of AutoLayoutLint."
+  s.name             = 'AutoLayoutLint'
+  s.version          = '0.1.0'
+  s.summary          = 'Provides automated test to detect runtime conflicts of constraints.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,13 +17,17 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
-                       DESC
+    Auto Layout is simple, powerful, unified solution to create responsible views.
+    But there are pitfalls of conflicting constraints on specific screen sizes,
+    and they cannot detect statically. This library helps detecting runtime
+    conflicts using unit test.
+  DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/AutoLayoutLint"
+  s.homepage         = 'https://github.com/ypresto/AutoLayoutLint'
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Yuya Tanaka" => "yuya.presto@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/AutoLayoutLint.git", :tag => s.version.to_s }
+  s.author           = { 'ypresto' => 'yuya.presto@gmail.com' }
+  s.source           = { git: 'https://github.com/ypresto/AutoLayoutLint.git', tag: s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'

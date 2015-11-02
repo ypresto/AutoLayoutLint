@@ -1,15 +1,15 @@
 {
   "name": "AutoLayoutLint",
   "version": "0.1.0",
-  "summary": "A short description of AutoLayoutLint.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/AutoLayoutLint",
+  "summary": "Provides automated test to detect runtime conflicts of constraints.",
+  "description": "Auto Layout is simple, powerful, unified solution to create responsible views.\nBut there are pitfalls of conflicting constraints on specific screen sizes,\nand they cannot detect statically. This library helps detecting runtime\nconflicts using unit test.",
+  "homepage": "https://github.com/ypresto/AutoLayoutLint",
   "license": "MIT",
   "authors": {
-    "Yuya Tanaka": "yuya.presto@gmail.com"
+    "ypresto": "yuya.presto@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/AutoLayoutLint.git",
+    "git": "https://github.com/ypresto/AutoLayoutLint.git",
     "tag": "0.1.0"
   },
   "platforms": {

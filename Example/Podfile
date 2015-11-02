@@ -1,14 +1,14 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'AutoLayoutLint_Example', :exclusive => true do
-  pod "AutoLayoutLint", :path => "../"
+target 'AutoLayoutLint_Example', exclusive: true do
+  pod 'AutoLayoutLint', path: '../'
 end
 
-target 'AutoLayoutLint_Tests', :exclusive => true do
-  pod "AutoLayoutLint", :path => "../"
+target 'AutoLayoutLint_Tests', exclusive: true do
+  pod 'AutoLayoutLint', path: '../'
 end
 
-target 'AutoLayoutLint_UsageExample', :exclusive => true do
-  pod "AutoLayoutLint", :path => "../"
+target 'AutoLayoutLint_UsageExample', exclusive: true do
+  pod 'AutoLayoutLint', path: '../'
 end
