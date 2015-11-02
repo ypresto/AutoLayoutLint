@@ -7,6 +7,8 @@ end
 
 target 'AutoLayoutLint_Tests', :exclusive => true do
   pod "AutoLayoutLint", :path => "../"
+end
 
-  
+target 'AutoLayoutLint_UsageExample', :exclusive => true do
+  pod "AutoLayoutLint", :path => "../"
 end
