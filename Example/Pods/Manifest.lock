@@ -1,0 +1,14 @@
+PODS:
+  - AutoLayoutLint (0.1.0)
+
+DEPENDENCIES:
+  - AutoLayoutLint (from `../`)
+
+EXTERNAL SOURCES:
+  AutoLayoutLint:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AutoLayoutLint: 7eb372d3bd5444c7bf7c48a38897601911b1afb1
+
+COCOAPODS: 0.39.0

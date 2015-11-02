@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04599B9B564BBEB3A44CD34FE067E2A3 /* PSTViewControllerMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1872E1DF0CA875179AD7F70EDA428381 /* PSTViewControllerMethodSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		046B32E5CEB4D9D412947ADE4C181652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
+		181CF62F57577B6E9E70280A2AB0807B /* AutoLayoutLint-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2DFFB3DF2BB1EE0F6CC4D82EA720D /* AutoLayoutLint-dummy.m */; };
+		1F7EA94563882FEEAAA76ED3D180E6E8 /* PSTAutoLayoutMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 178537D52FBFDFB95BCC31B84DEB79F5 /* PSTAutoLayoutMethodSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AAF75CAB4B472238E2828EC1C6EDA96 /* PSTViewControllerFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5936C414F9512B03562AB2C6165621B6 /* PSTViewControllerFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		721D8BD50A7330C5430BCEF87DD7CFCD /* Pods-AutoLayoutLint_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8CB2F68F014C3FEC7035F81E48CDC41 /* Pods-AutoLayoutLint_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		749E7E9BF035665BBA8BBCC6370F3A33 /* PSTAutoLayoutMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 734F4FD6B0852E606B81B0E25DE51F54 /* PSTAutoLayoutMethodSwizzling.m */; };
+		76FE86A1CBEB8E0106A7B4BB0E6BB44B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
+		896CC5FA18D6D29BE40BA10BD8703709 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
+		954741CC16122E07F6FA23F9BF64ABB5 /* Pods-AutoLayoutLint_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 952CB9A79F52C9A5BA7D3C28F1A479B7 /* Pods-AutoLayoutLint_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9928F3ED7D25D169A512B163A5DF7244 /* Pods-AutoLayoutLint_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5351761E89E64B20A26844B8F0B81C1 /* Pods-AutoLayoutLint_Example-dummy.m */; };
+		A9742641C2A607E7E5728D82D7AF7D70 /* AutoLayoutLint.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5F8116443A9981697A9AD6227081B5F7 /* AutoLayoutLint.bundle */; };
+		B6312020F0498911F317736ABA2777A5 /* PSTAutoLayoutLintTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C687C2ECFF81657003920D9F237CD3D3 /* PSTAutoLayoutLintTestCase.m */; };
+		BE42897E205D61AF1ACB250D3CD31D17 /* AutoLayoutLint-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E61117F781B78B704000658EC8EEE5B /* AutoLayoutLint-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D42DBC7F0FE264A2657882FCA2EF45FD /* PSTAutoLayoutLintTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 244CB3BCBB6DFEBF096BFA32A2389F1C /* PSTAutoLayoutLintTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D435E2A1CA07C5BF70A5FBE13EA64164 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279AA6492631DEFA8C439A9C088EEB8A /* XCTest.framework */; };
+		E070493C2EAE9C51574B4AA0F2A73C7C /* PSTViewControllerMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C74A3F3A510D66CDDEB5BE3261F19D /* PSTViewControllerMethodSwizzling.m */; };
+		E815BD8125100EE00CBB34B43FFC30AF /* PSTViewControllerFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = D826A9DD048F1A467864D3263608D205 /* PSTViewControllerFinder.m */; };
+		F8DB7E1CEBAB26E2FEA6C57D325544AB /* Pods-AutoLayoutLint_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19469C75E7BB5B209515A416396CA83E /* Pods-AutoLayoutLint_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		221C107672920A3148877DBFB1B1E885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA32548E8CD0AA9D96A495C449D26E67;
+			remoteInfo = AutoLayoutLint;
+		};
+		4479BED699B80900A6B6DBD1C149B073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA32548E8CD0AA9D96A495C449D26E67;
+			remoteInfo = AutoLayoutLint;
+		};
+		F6BC2BA893DF1B652C94A9731D4ABA3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3218B995534352C13F607830AD563482;
+			remoteInfo = "AutoLayoutLint-AutoLayoutLint";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E61117F781B78B704000658EC8EEE5B /* AutoLayoutLint-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutLint-umbrella.h"; sourceTree = "<group>"; };
+		178537D52FBFDFB95BCC31B84DEB79F5 /* PSTAutoLayoutMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSTAutoLayoutMethodSwizzling.h; sourceTree = "<group>"; };
+		1872E1DF0CA875179AD7F70EDA428381 /* PSTViewControllerMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSTViewControllerMethodSwizzling.h; sourceTree = "<group>"; };
+		19469C75E7BB5B209515A416396CA83E /* Pods-AutoLayoutLint_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoLayoutLint_Tests-dummy.m"; sourceTree = "<group>"; };
+		244CB3BCBB6DFEBF096BFA32A2389F1C /* PSTAutoLayoutLintTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSTAutoLayoutLintTestCase.h; sourceTree = "<group>"; };
+		279AA6492631DEFA8C439A9C088EEB8A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		29A5EE3237694EF9FC340D42C80EA307 /* AutoLayoutLint.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AutoLayoutLint.modulemap; sourceTree = "<group>"; };
+		2AD2DFFB3DF2BB1EE0F6CC4D82EA720D /* AutoLayoutLint-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AutoLayoutLint-dummy.m"; sourceTree = "<group>"; };
+		310AC240CD0CDF82B0635AFFA375BDD5 /* Pods_AutoLayoutLint_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoLayoutLint_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		521DA8D6F330F9075C381E5C98F07DC9 /* AutoLayoutLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AutoLayoutLint.xcconfig; sourceTree = "<group>"; };
+		5936C414F9512B03562AB2C6165621B6 /* PSTViewControllerFinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PSTViewControllerFinder.h; sourceTree = "<group>"; };
+		5B1DCB4CFBC0366B5B33627BEC07B22A /* Pods-AutoLayoutLint_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoLayoutLint_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5F8116443A9981697A9AD6227081B5F7 /* AutoLayoutLint.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutLint.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		677F5BDFCB41AD54C036179D2794B8EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		734F4FD6B0852E606B81B0E25DE51F54 /* PSTAutoLayoutMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSTAutoLayoutMethodSwizzling.m; sourceTree = "<group>"; };
+		75547FCB72A9AEB3B0757892BB9C7BA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		810667ED0FEE599DB82E3D48016BFC37 /* Pods-AutoLayoutLint_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AutoLayoutLint_Example.modulemap"; sourceTree = "<group>"; };
+		8515556A60AAC27BCC244D7A6E41F94B /* AutoLayoutLint-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutLint-prefix.pch"; sourceTree = "<group>"; };
+		8820946AE44094F894546705B182A512 /* Pods-AutoLayoutLint_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoLayoutLint_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8C041DDB075B6AFBE5952ABE0286F7BF /* Pods-AutoLayoutLint_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoLayoutLint_Example-resources.sh"; sourceTree = "<group>"; };
+		952CB9A79F52C9A5BA7D3C28F1A479B7 /* Pods-AutoLayoutLint_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoLayoutLint_Tests-umbrella.h"; sourceTree = "<group>"; };
+		955DBE3360A85DEB253DAC042CF34D76 /* AutoLayoutLint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoLayoutLint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A251747C16FEF7AB833062701E31E753 /* Pods-AutoLayoutLint_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoLayoutLint_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A71D8840087013B7346C184F551AB8A8 /* Pods_AutoLayoutLint_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoLayoutLint_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4EDC27E6FB33C2999CB6A5E46668E53 /* Pods-AutoLayoutLint_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoLayoutLint_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B8CB2F68F014C3FEC7035F81E48CDC41 /* Pods-AutoLayoutLint_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AutoLayoutLint_Example-umbrella.h"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C5351761E89E64B20A26844B8F0B81C1 /* Pods-AutoLayoutLint_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AutoLayoutLint_Example-dummy.m"; sourceTree = "<group>"; };
+		C53FBC152A9BB609A27F85D5615CD241 /* Pods-AutoLayoutLint_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoLayoutLint_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C687C2ECFF81657003920D9F237CD3D3 /* PSTAutoLayoutLintTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSTAutoLayoutLintTestCase.m; sourceTree = "<group>"; };
+		C9BA927B1338D7690A61B4175B347742 /* Pods-AutoLayoutLint_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AutoLayoutLint_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		CF95C47981C7B398525A1FD00BFD0CB7 /* Pods-AutoLayoutLint_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoLayoutLint_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D826A9DD048F1A467864D3263608D205 /* PSTViewControllerFinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSTViewControllerFinder.m; sourceTree = "<group>"; };
+		DF339D82CCADCC2DB57CB1692D55AADF /* Pods-AutoLayoutLint_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoLayoutLint_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DF8D6D88254E401BC15CC68B24A64920 /* Pods-AutoLayoutLint_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AutoLayoutLint_Tests-resources.sh"; sourceTree = "<group>"; };
+		E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E96E56B9D86B30DCC838871B5CB62B49 /* Pods-AutoLayoutLint_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AutoLayoutLint_Tests.modulemap"; sourceTree = "<group>"; };
+		E9C74A3F3A510D66CDDEB5BE3261F19D /* PSTViewControllerMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PSTViewControllerMethodSwizzling.m; sourceTree = "<group>"; };
+		F73DBA578B82B176352B108E3D55822F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F95D806F1692B99A3BE98A0CAC3D18E0 /* Pods-AutoLayoutLint_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AutoLayoutLint_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F9F08B918778B2475F26B1D2E2BDFEF7 /* Pods-AutoLayoutLint_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AutoLayoutLint_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		518A1031A335E9BA6A5076AA6C792893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046B32E5CEB4D9D412947ADE4C181652 /* Foundation.framework in Frameworks */,
+				D435E2A1CA07C5BF70A5FBE13EA64164 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90AE16935B41541E5C2070389A23B9CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896CC5FA18D6D29BE40BA10BD8703709 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AD820AA1182E5B97C116AD2387861F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6DDA6079CA5124A59706AEAD04E48D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FE86A1CBEB8E0106A7B4BB0E6BB44B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C6B012983F9FEF8CC65C1318F5F090C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */,
+				279AA6492631DEFA8C439A9C088EEB8A /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3A15C68463E21FE97648DA67D2B8BEA6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6EF29FD66F8CC0D8104644D0EA079030 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		4159075ABEB20DFA6FC3E8ED8CE86FCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F8116443A9981697A9AD6227081B5F7 /* AutoLayoutLint.bundle */,
+				955DBE3360A85DEB253DAC042CF34D76 /* AutoLayoutLint.framework */,
+				310AC240CD0CDF82B0635AFFA375BDD5 /* Pods_AutoLayoutLint_Example.framework */,
+				A71D8840087013B7346C184F551AB8A8 /* Pods_AutoLayoutLint_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6B012983F9FEF8CC65C1318F5F090C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		433FE943BC54BF5CCEEEBCC899A42488 /* Pods-AutoLayoutLint_Example */ = {
+			isa = PBXGroup;
+			children = (
+				677F5BDFCB41AD54C036179D2794B8EB /* Info.plist */,
+				810667ED0FEE599DB82E3D48016BFC37 /* Pods-AutoLayoutLint_Example.modulemap */,
+				F95D806F1692B99A3BE98A0CAC3D18E0 /* Pods-AutoLayoutLint_Example-acknowledgements.markdown */,
+				C9BA927B1338D7690A61B4175B347742 /* Pods-AutoLayoutLint_Example-acknowledgements.plist */,
+				C5351761E89E64B20A26844B8F0B81C1 /* Pods-AutoLayoutLint_Example-dummy.m */,
+				C53FBC152A9BB609A27F85D5615CD241 /* Pods-AutoLayoutLint_Example-frameworks.sh */,
+				8C041DDB075B6AFBE5952ABE0286F7BF /* Pods-AutoLayoutLint_Example-resources.sh */,
+				B8CB2F68F014C3FEC7035F81E48CDC41 /* Pods-AutoLayoutLint_Example-umbrella.h */,
+				F9F08B918778B2475F26B1D2E2BDFEF7 /* Pods-AutoLayoutLint_Example.debug.xcconfig */,
+				8820946AE44094F894546705B182A512 /* Pods-AutoLayoutLint_Example.release.xcconfig */,
+			);
+			name = "Pods-AutoLayoutLint_Example";
+			path = "Target Support Files/Pods-AutoLayoutLint_Example";
+			sourceTree = "<group>";
+		};
+		6539011EB0B765A8AA99FCA61DAAEFFF /* Pods-AutoLayoutLint_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				75547FCB72A9AEB3B0757892BB9C7BA9 /* Info.plist */,
+				E96E56B9D86B30DCC838871B5CB62B49 /* Pods-AutoLayoutLint_Tests.modulemap */,
+				B4EDC27E6FB33C2999CB6A5E46668E53 /* Pods-AutoLayoutLint_Tests-acknowledgements.markdown */,
+				A251747C16FEF7AB833062701E31E753 /* Pods-AutoLayoutLint_Tests-acknowledgements.plist */,
+				19469C75E7BB5B209515A416396CA83E /* Pods-AutoLayoutLint_Tests-dummy.m */,
+				5B1DCB4CFBC0366B5B33627BEC07B22A /* Pods-AutoLayoutLint_Tests-frameworks.sh */,
+				DF8D6D88254E401BC15CC68B24A64920 /* Pods-AutoLayoutLint_Tests-resources.sh */,
+				952CB9A79F52C9A5BA7D3C28F1A479B7 /* Pods-AutoLayoutLint_Tests-umbrella.h */,
+				CF95C47981C7B398525A1FD00BFD0CB7 /* Pods-AutoLayoutLint_Tests.debug.xcconfig */,
+				DF339D82CCADCC2DB57CB1692D55AADF /* Pods-AutoLayoutLint_Tests.release.xcconfig */,
+			);
+			name = "Pods-AutoLayoutLint_Tests";
+			path = "Target Support Files/Pods-AutoLayoutLint_Tests";
+			sourceTree = "<group>";
+		};
+		6EF29FD66F8CC0D8104644D0EA079030 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				244CB3BCBB6DFEBF096BFA32A2389F1C /* PSTAutoLayoutLintTestCase.h */,
+				C687C2ECFF81657003920D9F237CD3D3 /* PSTAutoLayoutLintTestCase.m */,
+				178537D52FBFDFB95BCC31B84DEB79F5 /* PSTAutoLayoutMethodSwizzling.h */,
+				734F4FD6B0852E606B81B0E25DE51F54 /* PSTAutoLayoutMethodSwizzling.m */,
+				5936C414F9512B03562AB2C6165621B6 /* PSTViewControllerFinder.h */,
+				D826A9DD048F1A467864D3263608D205 /* PSTViewControllerFinder.m */,
+				1872E1DF0CA875179AD7F70EDA428381 /* PSTViewControllerMethodSwizzling.h */,
+				E9C74A3F3A510D66CDDEB5BE3261F19D /* PSTViewControllerMethodSwizzling.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		706A0C57D46DB518819F1336734530C6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				433FE943BC54BF5CCEEEBCC899A42488 /* Pods-AutoLayoutLint_Example */,
+				6539011EB0B765A8AA99FCA61DAAEFFF /* Pods-AutoLayoutLint_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				E0FFE8BC68A2B340003FB640FD3A5488 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				4159075ABEB20DFA6FC3E8ED8CE86FCB /* Products */,
+				706A0C57D46DB518819F1336734530C6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8945119C1BDB8D2380C0D465C21973D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				29A5EE3237694EF9FC340D42C80EA307 /* AutoLayoutLint.modulemap */,
+				521DA8D6F330F9075C381E5C98F07DC9 /* AutoLayoutLint.xcconfig */,
+				2AD2DFFB3DF2BB1EE0F6CC4D82EA720D /* AutoLayoutLint-dummy.m */,
+				8515556A60AAC27BCC244D7A6E41F94B /* AutoLayoutLint-prefix.pch */,
+				0E61117F781B78B704000658EC8EEE5B /* AutoLayoutLint-umbrella.h */,
+				F73DBA578B82B176352B108E3D55822F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AutoLayoutLint";
+			sourceTree = "<group>";
+		};
+		985E8EAC9B2257F393D9ED17C7720006 /* AutoLayoutLint */ = {
+			isa = PBXGroup;
+			children = (
+				3A15C68463E21FE97648DA67D2B8BEA6 /* Pod */,
+				8945119C1BDB8D2380C0D465C21973D6 /* Support Files */,
+			);
+			name = AutoLayoutLint;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E0FFE8BC68A2B340003FB640FD3A5488 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				985E8EAC9B2257F393D9ED17C7720006 /* AutoLayoutLint */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		664BFBA9524B7577A35A5A0B1D0000FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE42897E205D61AF1ACB250D3CD31D17 /* AutoLayoutLint-umbrella.h in Headers */,
+				D42DBC7F0FE264A2657882FCA2EF45FD /* PSTAutoLayoutLintTestCase.h in Headers */,
+				1F7EA94563882FEEAAA76ED3D180E6E8 /* PSTAutoLayoutMethodSwizzling.h in Headers */,
+				2AAF75CAB4B472238E2828EC1C6EDA96 /* PSTViewControllerFinder.h in Headers */,
+				04599B9B564BBEB3A44CD34FE067E2A3 /* PSTViewControllerMethodSwizzling.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D465DE0FAF29E4D303F52067C3E1C478 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721D8BD50A7330C5430BCEF87DD7CFCD /* Pods-AutoLayoutLint_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6FEDAF61A79F3E51C188975D80CA242 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954741CC16122E07F6FA23F9BF64ABB5 /* Pods-AutoLayoutLint_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3218B995534352C13F607830AD563482 /* AutoLayoutLint-AutoLayoutLint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09E713AFBF1228A2CE714D02F18DF996 /* Build configuration list for PBXNativeTarget "AutoLayoutLint-AutoLayoutLint" */;
+			buildPhases = (
+				EAAFD04AB2FEE36941574C9583FB6E17 /* Sources */,
+				A9AD820AA1182E5B97C116AD2387861F /* Frameworks */,
+				1BBD90801A406C205E79902B69D21E43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AutoLayoutLint-AutoLayoutLint";
+			productName = "AutoLayoutLint-AutoLayoutLint";
+			productReference = 5F8116443A9981697A9AD6227081B5F7 /* AutoLayoutLint.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5B9C738472059F5E4909C40AF948BC0A /* Pods-AutoLayoutLint_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3CB2808CF71BCE25F59F5073020B199 /* Build configuration list for PBXNativeTarget "Pods-AutoLayoutLint_Tests" */;
+			buildPhases = (
+				12EBBFCBD98EB98E2DB0EB8DCB3DA24A /* Sources */,
+				AD6DDA6079CA5124A59706AEAD04E48D /* Frameworks */,
+				F6FEDAF61A79F3E51C188975D80CA242 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD61409F9E002F6407DDF8110820775D /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoLayoutLint_Tests";
+			productName = "Pods-AutoLayoutLint_Tests";
+			productReference = A71D8840087013B7346C184F551AB8A8 /* Pods_AutoLayoutLint_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF010B5AEC6CD9F11241E48C4EA818C7 /* Pods-AutoLayoutLint_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBE56BA413335441E995D30E699F0F6B /* Build configuration list for PBXNativeTarget "Pods-AutoLayoutLint_Example" */;
+			buildPhases = (
+				D19BA7E6C9C56E958A19EB26D1265E04 /* Sources */,
+				90AE16935B41541E5C2070389A23B9CA /* Frameworks */,
+				D465DE0FAF29E4D303F52067C3E1C478 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E97E2BA098C32EB4EBDE1F5A254CF9E /* PBXTargetDependency */,
+			);
+			name = "Pods-AutoLayoutLint_Example";
+			productName = "Pods-AutoLayoutLint_Example";
+			productReference = 310AC240CD0CDF82B0635AFFA375BDD5 /* Pods_AutoLayoutLint_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA32548E8CD0AA9D96A495C449D26E67 /* AutoLayoutLint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3B37BD97061C994357B819803F48A5F /* Build configuration list for PBXNativeTarget "AutoLayoutLint" */;
+			buildPhases = (
+				116270056CDA73BC7122F2D2CC9E99EC /* Sources */,
+				518A1031A335E9BA6A5076AA6C792893 /* Frameworks */,
+				2BAFD64960DE7780E88A3300D0D480EE /* Resources */,
+				664BFBA9524B7577A35A5A0B1D0000FB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4ED406B1F0B70AF8E24EBC5FECD6A7AF /* PBXTargetDependency */,
+			);
+			name = AutoLayoutLint;
+			productName = AutoLayoutLint;
+			productReference = 955DBE3360A85DEB253DAC042CF34D76 /* AutoLayoutLint.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4159075ABEB20DFA6FC3E8ED8CE86FCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA32548E8CD0AA9D96A495C449D26E67 /* AutoLayoutLint */,
+				3218B995534352C13F607830AD563482 /* AutoLayoutLint-AutoLayoutLint */,
+				AF010B5AEC6CD9F11241E48C4EA818C7 /* Pods-AutoLayoutLint_Example */,
+				5B9C738472059F5E4909C40AF948BC0A /* Pods-AutoLayoutLint_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BBD90801A406C205E79902B69D21E43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BAFD64960DE7780E88A3300D0D480EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9742641C2A607E7E5728D82D7AF7D70 /* AutoLayoutLint.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		116270056CDA73BC7122F2D2CC9E99EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181CF62F57577B6E9E70280A2AB0807B /* AutoLayoutLint-dummy.m in Sources */,
+				B6312020F0498911F317736ABA2777A5 /* PSTAutoLayoutLintTestCase.m in Sources */,
+				749E7E9BF035665BBA8BBCC6370F3A33 /* PSTAutoLayoutMethodSwizzling.m in Sources */,
+				E815BD8125100EE00CBB34B43FFC30AF /* PSTViewControllerFinder.m in Sources */,
+				E070493C2EAE9C51574B4AA0F2A73C7C /* PSTViewControllerMethodSwizzling.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12EBBFCBD98EB98E2DB0EB8DCB3DA24A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DB7E1CEBAB26E2FEA6C57D325544AB /* Pods-AutoLayoutLint_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19BA7E6C9C56E958A19EB26D1265E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9928F3ED7D25D169A512B163A5DF7244 /* Pods-AutoLayoutLint_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAFD04AB2FEE36941574C9583FB6E17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E97E2BA098C32EB4EBDE1F5A254CF9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AutoLayoutLint;
+			target = DA32548E8CD0AA9D96A495C449D26E67 /* AutoLayoutLint */;
+			targetProxy = 4479BED699B80900A6B6DBD1C149B073 /* PBXContainerItemProxy */;
+		};
+		4ED406B1F0B70AF8E24EBC5FECD6A7AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AutoLayoutLint-AutoLayoutLint";
+			target = 3218B995534352C13F607830AD563482 /* AutoLayoutLint-AutoLayoutLint */;
+			targetProxy = F6BC2BA893DF1B652C94A9731D4ABA3F /* PBXContainerItemProxy */;
+		};
+		FD61409F9E002F6407DDF8110820775D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AutoLayoutLint;
+			target = DA32548E8CD0AA9D96A495C449D26E67 /* AutoLayoutLint */;
+			targetProxy = 221C107672920A3148877DBFB1B1E885 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F378A3E14D9A68C54E99335D71C0191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521DA8D6F330F9075C381E5C98F07DC9 /* AutoLayoutLint.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AutoLayoutLint/AutoLayoutLint-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AutoLayoutLint/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AutoLayoutLint/AutoLayoutLint.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AutoLayoutLint;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2049CAF05351BBF4160C2E73826B95F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521DA8D6F330F9075C381E5C98F07DC9 /* AutoLayoutLint.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AutoLayoutLint;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		284714ACE1509429FE5750BF603FFFB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF339D82CCADCC2DB57CB1692D55AADF /* Pods-AutoLayoutLint_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoLayoutLint_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoLayoutLint_Tests/Pods-AutoLayoutLint_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoLayoutLint_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34C8E8AF2D5D0191664DADE9C98D1689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521DA8D6F330F9075C381E5C98F07DC9 /* AutoLayoutLint.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AutoLayoutLint/AutoLayoutLint-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AutoLayoutLint/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AutoLayoutLint/AutoLayoutLint.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AutoLayoutLint;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		582627FB75CA0ED50D8ECE64A17DF7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8820946AE44094F894546705B182A512 /* Pods-AutoLayoutLint_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoLayoutLint_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoLayoutLint_Example/Pods-AutoLayoutLint_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoLayoutLint_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B27B8457D20991C6F30161B1627BDAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF95C47981C7B398525A1FD00BFD0CB7 /* Pods-AutoLayoutLint_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoLayoutLint_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoLayoutLint_Tests/Pods-AutoLayoutLint_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoLayoutLint_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B621E57F5492D5CCBAA22D0F3D047B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521DA8D6F330F9075C381E5C98F07DC9 /* AutoLayoutLint.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = AutoLayoutLint;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CCCAD8FE49449FC07E247272876F3194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F08B918778B2475F26B1D2E2BDFEF7 /* Pods-AutoLayoutLint_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AutoLayoutLint_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AutoLayoutLint_Example/Pods-AutoLayoutLint_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_AutoLayoutLint_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09E713AFBF1228A2CE714D02F18DF996 /* Build configuration list for PBXNativeTarget "AutoLayoutLint-AutoLayoutLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2049CAF05351BBF4160C2E73826B95F9 /* Debug */,
+				B621E57F5492D5CCBAA22D0F3D047B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3B37BD97061C994357B819803F48A5F /* Build configuration list for PBXNativeTarget "AutoLayoutLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F378A3E14D9A68C54E99335D71C0191 /* Debug */,
+				34C8E8AF2D5D0191664DADE9C98D1689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBE56BA413335441E995D30E699F0F6B /* Build configuration list for PBXNativeTarget "Pods-AutoLayoutLint_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCAD8FE49449FC07E247272876F3194 /* Debug */,
+				582627FB75CA0ED50D8ECE64A17DF7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3CB2808CF71BCE25F59F5073020B199 /* Build configuration list for PBXNativeTarget "Pods-AutoLayoutLint_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B27B8457D20991C6F30161B1627BDAA /* Debug */,
+				284714ACE1509429FE5750BF603FFFB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
