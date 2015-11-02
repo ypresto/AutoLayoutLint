@@ -8,7 +8,8 @@
 
 #import <XCTest/XCTest.h>
 
-@import AutoLayoutLint;
+#import "PSTViewControllerFinder.h"
+#import "PSTViewControllerMethodSwizzling.h"
 
 @interface PSTViewControllerFinderTests : XCTestCase
 

@@ -22,5 +22,6 @@
       "Pod/Assets/*.png"
     ]
   },
-  "frameworks": "XCTest"
+  "frameworks": "XCTest",
+  "public_header_files": "Pod/Classes/PSTAutoLayoutLintTestCase.h"
 }

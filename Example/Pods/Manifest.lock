@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AutoLayoutLint: 7eb372d3bd5444c7bf7c48a38897601911b1afb1
+  AutoLayoutLint: eced3bc141db282cdffd0ff2484e52e77953165b
 
 COCOAPODS: 0.39.0

@@ -39,4 +39,6 @@ Pod::Spec.new do |s|
   # s.dependency 'AFNetworking', '~> 2.3'
 
   s.frameworks = 'XCTest'
+
+  s.public_header_files = 'Pod/Classes/PSTAutoLayoutLintTestCase.h'
 end

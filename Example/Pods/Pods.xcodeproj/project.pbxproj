@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04599B9B564BBEB3A44CD34FE067E2A3 /* PSTViewControllerMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1872E1DF0CA875179AD7F70EDA428381 /* PSTViewControllerMethodSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		046B32E5CEB4D9D412947ADE4C181652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
 		181CF62F57577B6E9E70280A2AB0807B /* AutoLayoutLint-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2DFFB3DF2BB1EE0F6CC4D82EA720D /* AutoLayoutLint-dummy.m */; };
-		1F7EA94563882FEEAAA76ED3D180E6E8 /* PSTAutoLayoutMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 178537D52FBFDFB95BCC31B84DEB79F5 /* PSTAutoLayoutMethodSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2996AF021E5D7F74FDCF557B247B841C /* Pods-AutoLayoutLint_UsageExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1489684B520E61E4571DDF93CEB592 /* Pods-AutoLayoutLint_UsageExample-dummy.m */; };
-		2AAF75CAB4B472238E2828EC1C6EDA96 /* PSTViewControllerFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5936C414F9512B03562AB2C6165621B6 /* PSTViewControllerFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70910D0A3DDA245A6E4CA0ABA444BC1A /* PSTViewControllerFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5936C414F9512B03562AB2C6165621B6 /* PSTViewControllerFinder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		721D8BD50A7330C5430BCEF87DD7CFCD /* Pods-AutoLayoutLint_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59041D44C174794310DB2734F2A1949A /* Pods-AutoLayoutLint_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		749E7E9BF035665BBA8BBCC6370F3A33 /* PSTAutoLayoutMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 734F4FD6B0852E606B81B0E25DE51F54 /* PSTAutoLayoutMethodSwizzling.m */; };
 		76FE86A1CBEB8E0106A7B4BB0E6BB44B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
 		896CC5FA18D6D29BE40BA10BD8703709 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E351727CD07BB90B2A3CAE2C2433F6C5 /* Foundation.framework */; };
+		8CC2D5034B7370804E633D1E67AFAC48 /* PSTViewControllerMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1872E1DF0CA875179AD7F70EDA428381 /* PSTViewControllerMethodSwizzling.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		954741CC16122E07F6FA23F9BF64ABB5 /* Pods-AutoLayoutLint_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 596806679D7BD00A788554CE2835A5F0 /* Pods-AutoLayoutLint_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9928F3ED7D25D169A512B163A5DF7244 /* Pods-AutoLayoutLint_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 916D0CD9B7152BC2B51B96FE18735B18 /* Pods-AutoLayoutLint_Example-dummy.m */; };
 		A9742641C2A607E7E5728D82D7AF7D70 /* AutoLayoutLint.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD5F06CC0CE78F92BBD30A0A3699D106 /* AutoLayoutLint.bundle */; };
+		B41FC585467FBB8669938E4D3D728DD4 /* PSTAutoLayoutMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 178537D52FBFDFB95BCC31B84DEB79F5 /* PSTAutoLayoutMethodSwizzling.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B6312020F0498911F317736ABA2777A5 /* PSTAutoLayoutLintTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C687C2ECFF81657003920D9F237CD3D3 /* PSTAutoLayoutLintTestCase.m */; };
 		BB2A7E223994D0222A1C067933EE2B5A /* Pods-AutoLayoutLint_UsageExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D424DCB659B76083AFB16952ED13562D /* Pods-AutoLayoutLint_UsageExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE42897E205D61AF1ACB250D3CD31D17 /* AutoLayoutLint-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E61117F781B78B704000658EC8EEE5B /* AutoLayoutLint-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -329,9 +329,9 @@
 			files = (
 				BE42897E205D61AF1ACB250D3CD31D17 /* AutoLayoutLint-umbrella.h in Headers */,
 				D42DBC7F0FE264A2657882FCA2EF45FD /* PSTAutoLayoutLintTestCase.h in Headers */,
-				1F7EA94563882FEEAAA76ED3D180E6E8 /* PSTAutoLayoutMethodSwizzling.h in Headers */,
-				2AAF75CAB4B472238E2828EC1C6EDA96 /* PSTViewControllerFinder.h in Headers */,
-				04599B9B564BBEB3A44CD34FE067E2A3 /* PSTViewControllerMethodSwizzling.h in Headers */,
+				B41FC585467FBB8669938E4D3D728DD4 /* PSTAutoLayoutMethodSwizzling.h in Headers */,
+				70910D0A3DDA245A6E4CA0ABA444BC1A /* PSTViewControllerFinder.h in Headers */,
+				8CC2D5034B7370804E633D1E67AFAC48 /* PSTViewControllerMethodSwizzling.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

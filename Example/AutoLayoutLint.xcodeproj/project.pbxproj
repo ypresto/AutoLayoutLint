@@ -747,6 +747,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoLayoutLint_Example.app/AutoLayoutLint_Example";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) Pods/Headers/Private/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -766,6 +767,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoLayoutLint_Example.app/AutoLayoutLint_Example";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) Pods/Headers/Private/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
