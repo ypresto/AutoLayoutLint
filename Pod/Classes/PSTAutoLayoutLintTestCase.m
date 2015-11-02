@@ -11,8 +11,8 @@
 #import "PSTViewControllerFinder.h"
 #import "PSTViewControllerMethodSwizzling.h"
 #import "PSTAutoLayoutMethodSwizzling.h"
-#import "MARTNSObject.h"
-#import "RTMethod.h"
+
+@import ObjectiveC.runtime;
 
 @interface PSTAutoLayoutLintTestCase ()
 
