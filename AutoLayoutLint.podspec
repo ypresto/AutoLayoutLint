@@ -45,4 +45,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'XCTest'
 
   s.public_header_files = 'Pod/Classes/PSTAutoLayoutLintTestCase.h'
+
+  # XCTest.framework does not support bitcode
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 end

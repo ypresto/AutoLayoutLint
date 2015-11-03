@@ -23,5 +23,8 @@
     ]
   },
   "frameworks": "XCTest",
-  "public_header_files": "Pod/Classes/PSTAutoLayoutLintTestCase.h"
+  "public_header_files": "Pod/Classes/PSTAutoLayoutLintTestCase.h",
+  "pod_target_xcconfig": {
+    "ENABLE_BITCODE": "NO"
+  }
 }
