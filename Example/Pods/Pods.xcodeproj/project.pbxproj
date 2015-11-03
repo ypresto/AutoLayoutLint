@@ -614,6 +614,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/AutoLayoutLint/AutoLayoutLint-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AutoLayoutLint/Info.plist";
@@ -683,6 +684,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/AutoLayoutLint/AutoLayoutLint-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AutoLayoutLint/Info.plist";
