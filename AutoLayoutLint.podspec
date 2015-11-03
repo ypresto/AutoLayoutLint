@@ -17,17 +17,17 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
-    Auto Layout is simple, powerful, unified solution to create responsible views.
+    Auto Layout is simple and powerful solution to create responsible views.
     But there are pitfalls of conflicting constraints on specific screen sizes,
-    and they cannot detect statically. This library helps detecting runtime
+    and they cannot be detected statically. This library helps detecting runtime
     conflicts using unit test.
   DESC
 
   s.homepage         = 'https://github.com/ypresto/AutoLayoutLint'
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots     = "https://github.com/ypresto/AutoLayoutLint/raw/v#{s.version.to_s}/screenshot.png"
   s.license          = 'MIT'
   s.author           = { 'ypresto' => 'yuya.presto@gmail.com' }
-  s.source           = { git: 'https://github.com/ypresto/AutoLayoutLint.git', tag: s.version.to_s }
+  s.source           = { git: 'https://github.com/ypresto/AutoLayoutLint.git', tag: "v#{s.version.to_s}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
