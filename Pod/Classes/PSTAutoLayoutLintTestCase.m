@@ -71,8 +71,8 @@ static NSDictionary *selectorStringToFinderResultItem;
 - (void)setUp
 {
     [super setUp];
-    [PSTAutoLayoutMethodSwizzling setUnsatisfiableConstraintsHandler:^(NSLayoutConstraint *offendingConstraint, NSArray *allConstraints) {
-        [self didConflictConstraint:offendingConstraint inConstraints:allConstraints];
+    [PSTAutoLayoutMethodSwizzling setUnsatisfiableConstraintsHandler:^(NSLayoutConstraint *breakConstraint, NSArray *mutuallyExclusiveConstraints) {
+        [self didConflictConstraint:breakConstraint inConstraints:mutuallyExclusiveConstraints];
     }];
 }
 

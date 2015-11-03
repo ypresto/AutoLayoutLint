@@ -22,8 +22,8 @@ Iterates through all view controllers in app and manually sets
 
 It utilizes method/function swizzling for testing:
 
-- Swizzles well-known `UIViewAlertForUnsatisfiableConstraints` function for detection.
-- Stubs `viewDidLoad` which can cause I/O or assertion failure in your code.
+- Swizzles caller objc method of well-known `UIViewAlertForUnsatisfiableConstraints` function for detection.
+- Stubs `viewDidLoad` to keep from I/O or assertion failure in your code.
 
 ## Usage
 

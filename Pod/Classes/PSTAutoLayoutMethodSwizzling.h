@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^PSTAutoLayoutMethodSwizzlingUnsatisfiableConstraintsHandler)(NSLayoutConstraint *offendingConstraint,
-                                                                          NSArray *allConstraints);
+typedef void (^PSTAutoLayoutMethodSwizzlingUnsatisfiableConstraintsHandler)(NSLayoutConstraint *breakConstraint, NSArray *mutuallyExclusiveConstraints);
 
 @interface PSTAutoLayoutMethodSwizzling : NSObject
 

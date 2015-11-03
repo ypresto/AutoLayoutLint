@@ -18,10 +18,16 @@
 
 @end
 
+static BOOL isSwizzled = NO;
+
 @implementation PSTViewControllerMethodSwizzling
 
 + (void)swizzleViewDidLoadOfViewControllerSubclasses
 {
+    if (isSwizzled) {
+        return;
+    }
+
     SEL swizzledSelector = @selector(PSTViewControllerMethodSwizzling_swizzledViewDidLoad);
     Method templateMethod = class_getInstanceMethod([UIViewController class], swizzledSelector);
     
@@ -36,10 +42,16 @@
         Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
         method_exchangeImplementations(swizzledMethod, originalMethod);
     }
+
+    isSwizzled = YES;
 }
 
 + (void)restoreSwizzledViewDidLoadOfViewControllerSubclasses
 {
+    if (!isSwizzled) {
+        return;
+    }
+
     SEL swizzledSelector = @selector(PSTViewControllerMethodSwizzling_swizzledViewDidLoad);
     
     for (Class class in [self findSubclassesForClass:[UIViewController class]]) {
@@ -48,6 +60,8 @@
         Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
         method_exchangeImplementations(swizzledMethod, originalMethod);
     }
+
+    isSwizzled = NO;
 }
 
 + (NSArray<Class> *)findSubclassesForClass:(Class)parentClass
