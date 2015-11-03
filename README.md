@@ -8,6 +8,8 @@
 AutoLayoutLint provides automated test to detect runtime conflicts of Auto Layout
 constraints in each view controller.
 
+![screenshot.png](screenshot.png)
+
 ## Why
 
 Auto Layout is simple and powerful solution to create responsible views.
