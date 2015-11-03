@@ -45,9 +45,21 @@ It utilizes method/function swizzling for testing:
 + (NSArray<NSValue *> *)screenSizes
 {
     return @[
-             [self valueWithWidth:600 height:600],
-             [self valueWithWidth:100 height:600],
+        [self valueWithWidth:320 height:480], // iPhone 4S
+        [self valueWithWidth:480 height:320],
+        [self valueWithWidth:320 height:568], // iPhone 5, 5S
+        [self valueWithWidth:568 height:320],
+        [self valueWithWidth:375 height:667], // iPhone 6, 6S
+        [self valueWithWidth:667 height:375],
+        [self valueWithWidth:414 height:736], // iPhone 6 Plus, 6S Plus
+        [self valueWithWidth:736 height:414],
     ];
+}
+
+- (void)testDummy
+{
+    // NOTE: Workaround for Xcode bug.
+    // Refer: https://github.com/ypresto/AutoLayoutLint/issues/1
 }
 
 @end
