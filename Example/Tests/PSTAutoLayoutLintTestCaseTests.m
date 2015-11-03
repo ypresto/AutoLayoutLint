@@ -6,7 +6,7 @@
 //  Copyright © 2015年 Yuya Tanaka. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
 
 @import AutoLayoutLint;
 
