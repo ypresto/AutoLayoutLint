@@ -12,7 +12,7 @@ constraints in each view controller.
 
 Auto Layout is simple and powerful solution to create responsible views.
 But there are pitfalls of conflicting constraints on specific screen sizes,
-and they cannot detect statically. This library helps detecting runtime
+and they cannot be detected statically. This library helps detecting runtime
 conflicts using unit test.
 
 ## How it works
@@ -61,7 +61,11 @@ Refer [The Ultimate Guide To iPhone Resolutions](http://www.paintcodeapp.com/new
 Implement `+ (BOOL)shouldTestViewControllerWithLabel:(NSString * _Nonnull)label screenSize:(CGSize)screenSize`
    if you want to skip some of tests.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Running usage example
+
+UsageExample target is disabled by default as it fails (intended).
+Please enable from `Edit Scheme -> Test -> Info" before execute Test task to run it.
 
 ## Requirements
 
@@ -70,11 +74,23 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-TBD (Carthage and Cocoapods)
+### Carthage
+
+```
+github "ypresto/AutoLayoutLint" ~> 0.1.0
+```
+
+### Cocoapods
+
+```
+target 'Your_Tests_Target', exclusive: true do
+  pod 'AutoLayoutLint', '~> 0.1.0'
+end
+```
 
 ## Author
 
-Yuya Tanaka (@ypresto)
+Yuya Tanaka (Github: @ypresto / Twitter: [yuya_presto](https://twitter.com/yuya_presto))
 
 ## License
 
