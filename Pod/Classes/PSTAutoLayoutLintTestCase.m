@@ -167,7 +167,7 @@ static NSDictionary *selectorStringToFinderResultItem;
 - (void)didConflictConstraint:(NSLayoutConstraint *)offendingConstraint
                 inConstraints:(NSArray *)allConstraints
 {
-    XCTFail(@"Constraints broken for [%@].", NSStringFromCGSize(self.currentScreenSize));
+    XCTFail(@"Constraints broken for %@ [%@].", self.viewControllerLabel, NSStringFromCGSize(self.currentScreenSize));
 }
 
 @end

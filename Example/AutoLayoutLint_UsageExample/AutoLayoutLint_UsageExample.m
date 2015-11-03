@@ -47,7 +47,7 @@
 + (BOOL)shouldTestViewControllerWithLabel:(NSString *)label screenSize:(CGSize)screenSize
 {
     if ([label containsString:@"PSTTestViewController2.xib"]) {
-        return screenSize.width <= 600 && screenSize.height <= 600;
+        return screenSize.width >= 400 && screenSize.height >= 400;
     }
     return ![label containsString:@"Main.storyboard -"];
 }
