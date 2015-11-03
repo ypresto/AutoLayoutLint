@@ -13,9 +13,9 @@ constraints in each view controller.
 ## Why
 
 Auto Layout is simple and powerful solution to create responsible views.
-But there are pitfalls of conflicting constraints on specific screen sizes,
-and they cannot be detected statically. This library helps detecting runtime
-conflicts using unit test.
+But badly-designed constraints can cause conflicts on different screen sizes,
+and they cannot be detected statically (i.e. by Interface Builder). This library
+helps detecting such runtime conflicts with unit test.
 
 ## How it works
 
@@ -101,6 +101,11 @@ target 'Your_Tests_Target', exclusive: true do
   pod 'AutoLayoutLint', '~> 0.1.0'
 end
 ```
+
+## Limitations
+
+- Currently cells in UITableView and UICollectionView are not checked.
+- Dynamically added views and/or constraints (from something but `-init` method) cannot be checked.
 
 ## Author
 

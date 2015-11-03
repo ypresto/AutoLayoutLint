@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
     Auto Layout is simple and powerful solution to create responsible views.
-    But there are pitfalls of conflicting constraints on specific screen sizes,
-    and they cannot be detected statically. This library helps detecting runtime
-    conflicts using unit test.
+    But badly-designed constraints can cause conflicts on different screen sizes,
+    and they cannot be detected statically (i.e. by Interface Builder). This library
+    helps detecting such runtime conflicts with unit test.
   DESC
 
   s.homepage         = 'https://github.com/ypresto/AutoLayoutLint'

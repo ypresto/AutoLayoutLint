@@ -52,4 +52,8 @@
     return ![label containsString:@"Main.storyboard -"];
 }
 
+- (void)testDummy
+{
+}
+
 @end
