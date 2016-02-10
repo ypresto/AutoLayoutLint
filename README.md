@@ -94,7 +94,7 @@ Please enable from `Edit Scheme -> Test -> Info" before execute Test task to run
 github "ypresto/AutoLayoutLint" ~> 0.1.0
 ```
 
-### Cocoapods
+### CocoaPods
 
 ```
 target 'Your_Tests_Target', exclusive: true do
